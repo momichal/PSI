@@ -7,6 +7,11 @@ public class Neuron {
 
     public Neuron () {
         randomWeight();
+        /*weights = new double[3];
+
+        for(int i=0; i<3; i++) {
+            weights[i] = 0.0;
+        }*/
     }
 
     public void randomWeight()
@@ -47,12 +52,10 @@ public class Neuron {
 
     public void processLearning(Neuron neuron, double amount, double ratio, int[] p, int[] q, int[] y, int x0)
     {
-        /* Proces uczenia */
         for ( int j = 0; j < amount; j++ ) {
             for (int i = 0; i < 4; i++) {
                 neuron.learning(new int[]{x0, p[i], q[i]}, y[i], ratio);
             }
-            //}
 
         /* Przy której iteracji uzyskaliśmy poprawny rezultat */
 

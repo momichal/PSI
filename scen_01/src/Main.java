@@ -2,8 +2,8 @@ public class Main {
 
     public static void main ( String[] args ) {
 
-        double ratio = 0.9; //współczynnik uczenia
-        double maxAmount = 100; //ilość powtórzeń
+        double ratio = 0.1; //współczynnik uczenia
+        double maxAmount = 1000; //ilość powtórzeń
         boolean ifRandom = false;
         Neuron neuron = new Neuron();
 
