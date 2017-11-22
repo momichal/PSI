@@ -5,7 +5,7 @@ public class AdalineNeuron {
     private double[] weight;
     double[] membranePotential;
 
-    private double learning_ratio = 0.01;
+    private double learning_ratio = 0.00001;
     private double maxIteration = 2000;
     private int amountOfLetters = 20;
 
@@ -53,7 +53,7 @@ public class AdalineNeuron {
     }
 
 
-    // Wynik z użyciem funkcj aktywacji
+    // Wynik z użyciem funkcji aktywacji
     public void resultWithActivation(AdalineNeuron adaline, int iteration) {
         System.out.println("Ilość wykonanych iteracji: " + iteration);
         for(int i=0; i<20;i++){
