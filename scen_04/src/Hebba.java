@@ -48,8 +48,7 @@ public class Hebba {
             double membranePotential = getMembranePotential(oneLetterTab, weight);
             result = activationBlock(membranePotential);
 
-            //System.out.print("Litera nr " + i + ", wynik: "+ result + "\n");
-            System.out.print(result + "\n");
+            System.out.print("Litera nr " + i + ", wynik: "+ result + "\n");
         }
     }
 
